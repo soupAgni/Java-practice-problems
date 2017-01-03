@@ -1,0 +1,29 @@
+
+//Find the most frequent integer in an array
+
+public class arrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] a = new int[]{3,4,3,3,6,7};
+		int count = 0;
+		int tempCount = 0;
+		int num = 0;
+		for(int i =0; i< a.length; i++){
+			num = a[i];
+			
+			for(int j = 1; j<a.length; j++){
+				if(num == a[j]){
+					count ++;
+				}
+				if(tempCount< count){
+					tempCount = count;
+				}
+			}
+			
+		}
+		System.out.println(tempCount);
+
+	}
+
+}
